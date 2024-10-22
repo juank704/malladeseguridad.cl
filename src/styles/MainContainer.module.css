@@ -1,0 +1,24 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  overflow: hidden; /* Evita el desbordamiento global */
+}
+
+.leftContainer {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column; /* Para disposición vertical */
+  align-items: center;
+  justify-content: flex-start; /* Comienza el contenido desde arriba */
+  background-color: #f0f0f0; /* Color de fondo */
+  height: 100%; /* Ocupa toda la altura del contenedor principal */
+  overflow-y: auto; /* Activa el scroll vertical */
+  padding: 10px; /* Espacio interno para separar el contenido */
+}
+
+.rightContainer {
+  flex: 1; /* Ocupa la otra mitad del espacio */
+  background: url('/image/fondo_x2.jpg') no-repeat center center; /* Imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el contenedor */
+}

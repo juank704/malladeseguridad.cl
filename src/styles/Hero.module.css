@@ -1,0 +1,50 @@
+/*.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #004aad, #06a77d);
+    color: white;
+    text-align: center;
+  }
+ */ 
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: /*linear-gradient(135deg, rgba(0, 74, 173, 0.7), rgba(6, 167, 125, 0.7)),*/
+                url('/image/fondo_x2.jpg'); /* Ruta correcta */
+    background-size: cover;
+    background-position: center;
+    /*background-blend-mode: overlay; /* Aplica la mezcla */
+    color: white;
+    text-align: center;
+  }
+  
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .typedText {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #f3f3f3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

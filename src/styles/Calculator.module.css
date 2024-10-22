@@ -1,0 +1,116 @@
+  .calculator {
+    padding: 0px;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    max-width: 1200px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las tarjetas a los extremos */
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 0 0 40%; /* Ocupa el 25% del ancho del contenedor */
+    max-width: 40%; /* Limita el ancho máximo al 25% */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardHeader {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .inputField {
+    width: 100%;
+    border: 1px solid #ddd; /* Borde más claro */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f5f5f7; /* Color de fondo más suave */
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Estilo al enfocar el campo */
+  .inputField:focus {
+    border-color: #004aad; /* Borde azul oscuro al enfocar */
+    box-shadow: 0 0 6px rgba(0, 74, 173, 0.2); /* Sombra suave azul */
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+  }
+  
+  /* Cambios para el select */
+  .inputField.select {
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath d='M7 10l5 5 5-5H7z' fill='%23666'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
+  
+  .button {
+    padding: 6px 10px;
+    margin-top: 20px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*.priceTotal {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }*/
+  
+  @media (max-width: 768px) {
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 340px;
+    }
+  
+    .calculator {
+      padding: 15px;
+    }
+  }
+  
